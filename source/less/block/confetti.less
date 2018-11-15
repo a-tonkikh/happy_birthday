@@ -1,0 +1,54 @@
+.confetti {
+  background-image: url("../img/disco-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.confetti__button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+
+  &::before {
+    bottom: 0;
+    color: rgb(255,255,0);
+    content: "нажми на котика";
+    font-size: 20px;
+    height: 30px;
+    line-height: 20px;
+    left: -70px;
+    margin: auto;
+    position: absolute;
+    text-shadow: 0 0 10px #000;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+.confetti__hook {
+  color: rgb(255,255,0);
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  text-shadow: 0 0 10px #000;
+}
+
+@media (max-width: @mobile-width-max) {
+  .confetti__hook {
+    color: rgb(255,255,0);
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    width: 300px;
+  }
+}

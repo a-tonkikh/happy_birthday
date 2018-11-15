@@ -1,0 +1,15 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+}
+
+@media (max-width: @mobile-width-max) {
+  .container {
+    flex-direction: column-reverse;
+    width: 300px;
+  }
+}

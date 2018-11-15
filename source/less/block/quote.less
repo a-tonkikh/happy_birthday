@@ -1,0 +1,49 @@
+.quote {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-image: url("../img/torn2.png");
+    background-position: bottom;
+    background-size: cover;
+    content: "";
+    height: 100px;
+    position: absolute;
+    transform: rotate(180deg);
+    top: -100px;
+    width: 100%;
+  }
+
+  &::after {
+    background-image: url("../img/torn2.png");
+    background-position: bottom;
+    background-size: cover;
+    bottom: -100px;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.quote__text {
+  color: #000;
+  font-size: 45px;
+  line-height: 54px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 690px;
+}
+
+@media (max-width: @mobile-width-max) {
+  .quote__text {
+    font-size: 30px;
+    line-height: 38px;
+    width: 320px;
+  }
+}
